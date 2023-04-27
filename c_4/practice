@@ -1,0 +1,51 @@
+#include <stdio.h>
+
+//1번
+int max(int x, int y)
+{
+    return (x > y)? x:y;
+}
+
+int main(void)
+{
+    int x, y, larger;
+    printf("정수 2개를 입력하시오: ");
+    scanf("%d %d", &x, &y);
+    larger = max(x, y);
+    printf("더 큰 값은 %d입니다. \n", larger);
+    return 0;
+}
+
+//2번
+int main(void)
+{
+  int x = 5;
+  int y = 5;
+  
+  printf("x=%d\n", x);
+  printf("x=%d\n", x++); // 5출력
+  printf("x=%d\n", x); // 6출력
+  
+  printf("y=%d\n", y);
+  printf("y=%d\n", --y); // 4출력
+  printf("y=%d\n", y); // 5출력
+  
+  return 0;
+}
+
+//3번
+
+int main(void)
+{
+  int x, y;
+  for (x= 0; x < 5; x++)
+  {
+    for(y=0; y < 5; y++)
+    {
+      printf("*");
+    }
+    printf("\n");
+  }
+  
+  return 0;
+}
